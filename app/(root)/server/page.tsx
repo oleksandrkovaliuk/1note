@@ -1,12 +1,9 @@
 import Home from "./inner";
 import { preloadQuery, preloadedQueryResult } from "convex/nextjs";
 import { api } from "@/convex/_generated/api";
-import { Button } from "@/components/ui/button";
 
 export default async function ServerPage() {
-  const preloaded = await preloadQuery(api.myFunctions.listNumbers, {
-    count: 3,
-  });
+  const preloaded = await preloadQuery(api.documents.routes.list);
 
   const data = preloadedQueryResult(preloaded);
 

@@ -17,5 +17,8 @@
     "lib": "@/shared/lib",
     "hooks": "@/shared/hooks"
   },
+  "registries": {
+    "@clerk": "https://clerk.com/r/{name}.json"
+  },
   "iconLibrary": "lucide"
 }
